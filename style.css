@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  list-style: none;
+}
+html,
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+/* nav bar starts  */
+
+.nav-link {
+  color: black;
+  transition-duration: 300ms;
+}
+.nav-link:hover {
+  color: #f44335;
+}
+.hamburgur_menu {
+  top: 80px;
+  transition-duration: 600ms;
+}
+.hide_menu {
+  display: none !important;
+}
+.btn {
+  font-size: 18px !important;
+}
+
+/* heor section starts  */
+
+.heroSection {
+  background-image: url(./assets/edwin-andrade-4V1dC_eoCwg-unsplash\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .container {
+    color: #fff;
+    p:first-child {
+      font-size: 18px;
+      font-weight: 700;
+      span {
+        color: #f44335;
+      }
+    }
+    h1 {
+      font-size: 56px;
+      font-weight: 700;
+      span {
+        color: #f44335;
+        border-bottom: 1px solid #f44335;
+      }
+    }
+    p {
+      font-size: 20px !important;
+    }
+    .askBtn {
+      font-size: 18px;
+      font-weight: 700;
+      color: #f44335;
+      background-color: #fafafa;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 100px;
+      transition-duration: 200ms;
+      &:hover {
+        background-color: #f44335;
+        color: #fafafa;
+      }
+    }
+  }
+}
+
+/* about section starts */
+
+.about {
+  .container {
+    .row {
+      .col-12 {
+        display: flex;
+        &:first-child {
+          h1 {
+            font-size: 40px;
+            font-weight: 700;
+            span {
+              color: #f44335;
+              border-bottom: 1px solid #f44335;
+            }
+          }
+        }
+        .about-card {
+          background-color: #2d3142;
+          img {
+            background-color: #fff;
+          }
+          p {
+            color: #dddddd;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mission-vision section starts  */
+
+.mission-vision {
+  .container {
+    .line-image {
+      transform: translate(-50%, -50%);
+      scale: 0.7;
+    }
+  }
+}
+
+/* discover-interact-engage section starts */
+
+.discover-interact-engage {
+  background-color: #fafafa;
+  .container {
+    /* height: 490px; */
+    .row {
+      height: 100%;
+      .col-12 {
+        height: 100%;
+        div {
+          h3 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #757095;
+          }
+        }
+        span {
+          font-size: 204px;
+          font-weight: 800;
+          color: #f44335;
+          opacity: 0.05;
+        }
+      }
+    }
+  }
+}
+
+/* team seciton starts  */
+
+.team {
+  .container {
+    header {
+      h2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 70px;
+      }
+    }
+    .row {
+      .col-12 {
+        width: 275px;
+        height: 350px;
+        h2 {
+          font-size: 24px;
+          font-weight: 700;
+        }
+        p {
+          font-size: 14px;
+          opacity: 40%;
+        }
+      }
+    }
+  }
+}
+
+/* footer section starts  */
+
+footer {
+  margin-top: 300px;
+  .container {
+    .address {
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 21.6px;
+        letter-spacing: -0.01em;
+      }
+    }
+    .row {
+      .col-12 {
+        h2 {
+          font-size: 18px;
+          font-weight: 700;
+          color: #20484f;
+        }
+        ul li a {
+          font-size: 16px;
+          color: #20484f;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .copyright {
+    font-size: 14px !important;
+    color: #20484f;
+  }
+}
+
+/* ? ================== responsive code starts ======================= */
+
+@media all and (max-width: 768px) {
+  .heroSection {
+    .container {
+      p:first-child {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 46px;
+      }
+      p {
+        font-size: 18px !important;
+      }
+      .askBtn {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 425px) {
+  .heroSection {
+    .container {
+      p:first-child {
+        font-size: 15px;
+      }
+      h1 {
+        font-size: 42px;
+      }
+      p {
+        font-size: 16px !important;
+      }
+      .askBtn {
+        font-size: 15px;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
